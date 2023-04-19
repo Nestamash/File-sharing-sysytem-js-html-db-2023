@@ -1,0 +1,574 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .image-bg{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-image: url(/images/pexels-pixabay-159866.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .btn-container{
+   
+    width: 1400px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 150px;
+  }
+  .btn{
+    background-color: #0563af;
+    color: rgb(236, 235, 235);
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .btn:hover{
+    transform: scale(1.02);
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  /* register student*/
+  .form-holder{
+    display: flex;
+    justify-content: center;
+  margin-top: 50px;
+    min-height: 50vh;
+
+  }
+  .form-hidden{
+    display: none;
+  }
+  .form__message {
+    text-align:left;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+.form__message--success {
+    color: green;
+}
+
+.form__message--error {
+    color: red;
+}
+  .left{
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .container {
+    border-left: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 10px 22px 40px;
+    display: inline-block;
+    background: #f1f1f1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+
+  }
+  button[type=submit]{
+    width: 50%;
+    margin: 5px 10px 22px 40px;
+    padding: 15px;
+    background: #0563af;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  button[type=submit]:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  #name{
+    margin: 10px 0px 0px 40px;
+  }
+  label{
+    margin: 0 0 0 40px;
+  }
+  h1{
+    font-size: 1.2rem;
+    margin: 0 0 0 40px;
+  }
+  .images{
+   width: 100%;
+   height: 100%;
+   background-image: url(/images/4599155.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+  }
+  .images2{
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/2903547.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   }
+
+
+
+   /* select style */
+  .box h1{
+    margin-bottom: 40px;
+  }
+  
+  .box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+   
+
+  }
+  .box select {
+    background-image:
+      linear-gradient(45deg, transparent 50%, white 50%),
+      linear-gradient(135deg, white 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  .box select:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+  .box select::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+  }
+  .box select:hover{
+    cursor: pointer;
+    background-color: hsl(207, 94%, 45%);
+  }
+  
+  .box select option {
+    padding: 30px;
+  }
+  
+/* register lecturer */
+.images-lecturer{
+  width: 100%;
+    height: 100%;
+    background-image: url(/images/26642.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+  /* login */
+  .imagesLogin{
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/2903547.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+ 
+
+ a{
+    margin-left: 40px;
+    color: hsl(207, 94%, 35%);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  a:hover{
+    color: hsl(207, 94%, 45%);
+  }
+  /* remember me */
+ .remember-me{
+  width: 50%;
+    padding: 15px;
+    margin: 5px 10px 22px 40px;
+    display: inline-block;
+    /* background: #f1f1f1; */
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+ }
+ .remember-me span{
+  margin-left: 20px;
+  font-size: 1rem;
+  color: hsl(207, 94%, 35%);
+ }
+ input[type=checkbox]:hover{
+  cursor: pointer;
+  border-width: 50px;
+ }
+
+ /* styling studentsHome inbox */
+
+ .Home-container{
+  display: flex;
+  justify-content: center;
+ 
+  margin-top: 50px;
+ }
+.home-left-side{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 50px;
+  height: 400px;
+}
+.home-left-side input[type=text]{
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 100%;
+  margin-left: 2px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 2px solid hsl(207, 94%, 35%);
+}
+.home-left-side button{
+  background-color: hsl(207, 94%, 35%);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  width: 50%;
+  margin: 20px;
+  border: none;
+  outline: none;
+}
+.home-left-side button:hover{
+  cursor: pointer;
+  background-color: hsl(207, 94%, 45%);
+
+}
+.home-left-side p{
+  margin: 10px;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.home-left-side span{
+  margin: 15px;
+}
+.home-left-side span b{
+  padding-left: 10px;
+}
+.home-left-side .fa-user-tie{
+font-size: 1.3rem;
+color: hsl(207, 94%, 45%);
+}
+.home-left-side ul li{
+  list-style: none;
+  
+}
+.home-left-side ul li b{
+  padding-left: 10px;
+}
+.logout{
+  margin-top: 20px;
+  text-align: end;
+  padding: 10px;
+}
+.braket{
+  color: hsl(207, 94%, 45%);
+  font-size: 0.8rem;
+}
+
+/* search icon */
+.search-wrapper{
+  position: relative;
+  display: flex;
+  
+}
+.search-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  border-left: 2px solid hsl(207, 94%, 45%);
+  width: 50px;
+  height: 50px;
+}
+.fa-magnifying-glass{
+  font-size: 1.3rem;
+  color: hsl(207, 94%, 35%);
+}
+.fa-magnifying-glass:hover{
+  cursor: pointer;
+  color: hsl(207, 94%, 45%);
+  transform: scale(1.3);
+}
+
+/* .home-right-side{
+ 
+  } */
+.home-right-side h1{
+  font-weight: 500;
+  color:hsl(207, 94%, 45%);
+}
+.home-right-side h1 i{
+  font-size: 0.9rem;
+  
+}
+.inbox{
+  display: flex;
+  border-left: 2px solid hsl(207, 94%, 45%);
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.inbox button{
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3rem;
+  /* background-color: transparent; */
+  border: 2px dotted hsl(207, 94%, 35%);
+}
+.inbox button:hover{
+  cursor: pointer;
+  border: 2px solid hsl(207, 94%, 45%);
+ font-weight: 500;
+}
+.inbox button:first-child{
+  margin-left: 20px;
+}
+ .active{
+  background-color: hsl(207, 94%, 35%);
+  color: white;
+}
+.files{
+  padding-left: 20px;
+  padding-top: 30px;
+  margin-left: 50px;
+  width: 100%;
+  min-height: 200px;
+  border-left: 2px solid hsl(207, 94%, 45%);
+ 
+}
+.uploaded-file{
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid hsl(207, 94%, 45%);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+}
+.uploaded-file img{
+  width: 50px;
+  height: 40px;
+
+}
+.uploaded-file p{
+  padding-left: 20px;
+}
+.uploaded-file p:last-of-type{
+  flex: 1;
+}
+.uploaded-file span{
+  margin-right: 10px;
+  background-color: hsl(207, 94%, 35%);
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  color: white;
+  height: 45px;
+}
+.uploaded-file strong{
+  margin-right: 10px;
+}
+.uploaded-file span:hover{
+  cursor: pointer;
+  background-color: hsl(207, 94%, 45%);
+}
+.desc{
+  margin-right: 380px;
+}
+.desc span{
+  background-color: transparent;
+  color: red;
+}
+.desc span:hover{
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* lecturer table styling */
+
+#lecturer {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  overflow-x: hidden;
+}
+
+#lecturer td, #lecturer th {
+  /* border: 1px solid #ddd; */
+  padding: 15px;
+}
+
+#lecturer tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#lecturer tr:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+#lecturer th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  
+}
+
+#lecturer button{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: hsl(207, 94%, 35%);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+}
+#lecturer button:hover{
+  cursor: pointer;
+  background-color: hsl(207, 94%, 45%);
+  font-weight: 500;
+}
+
+.shared-files{
+  width: 95%;
+  margin-top: 50px;
+}
+.desc{
+  overflow: hidden;
+}

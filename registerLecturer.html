@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Lecturer registration</title>
+</head>
+<body>
+   
+    <div class="form-holder">
+
+    <div class="left">
+        <h1>Register in order to share files to groups.</h1>
+        <div class="images-lecturer"> 
+            
+        </div>
+    </div> 
+
+        <div class="container box">
+            <h1>Register as a lecturer</h1>
+            <label for="name" id="name"><b>Name</b></label>
+            <input type="text" name="name" id="name">
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="email" id="email" required>
+            <label for="email"><b>Staff id</b></label>
+            <input type="text" name="staff" id="staff" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="psw" id="psw" required>
+
+           <label for="psw-repeat"><b>Confirm Password</b></label>
+           <input type="password" name="psw-repeat" id="psw-repeat" required>
+           <select>
+            <option value="0">Select a campus:</option>
+            <option value="volvo">JKUAT</option>
+            <option value="volvo">KU</option>
+          </select>
+           <button type="submit" class="registerbtn">Register</button>  
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

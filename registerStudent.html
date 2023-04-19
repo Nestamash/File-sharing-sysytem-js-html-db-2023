@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Student registration</title>
+</head>
+<body>
+   
+    <form class="form-holder first">
+
+    <div class="left">
+        <h1>Register in order to join a group.</h1>
+        <div class="images"> 
+            
+        </div>
+    </div> 
+
+        <div class="container">
+            <h1>Register as a student</h1>
+            <div class="form__message form__message--error"></div>
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" id="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="email" id="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="psw" id="psw" required>
+
+           <label for="psw-repeat"><b>Confirm Password</b></label>
+           <input type="password" name="psw-repeat" id="psw-repeat" required>
+
+           <button type="submit" class="registerbtn">Continue</button>  
+    </div>
+  </form>
+
+<!-- select the year student registration continuation -->
+
+<form class="form-holder second form-hidden">
+
+    <div class="left">
+        <h1>You can share the following type of files.</h1>
+        <div class="images2"> 
+            
+        </div>
+    </div> 
+        <div class="container box">
+            <h1>Select year to join a group</h1>
+            <select class="campus" required>
+                <option value="">Select a campus:</option>
+                <option value="JKUAT">JKUAT</option>
+                <option value="KU">KU</option>
+              </select>
+
+              
+                <select class="course" required>
+                  <option value="">Select a course:</option>
+                  <option value="BBIT">BBIT</option>
+                  <option value="BCOM">BCOM</option>
+                  <option value="BIT">BIT</option>
+                  <option value="ARCHTECTURE">ARCHTECTURE</option>
+                  <option value="MEDICINE">MEDICINE</option>
+                  <option value="PHARMACY">PHARMACY</option>
+                  <option value="NURSE">NURSE</option>
+                  <option value="EEE">EEE</option>
+                  <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                  <option value="ROCKET SCIENCE">ROCKET SCIENCE</option>
+                </select>
+
+                <select class="year" required>
+                    <option value="">Select an year:</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                  </select>
+
+                  <select class="month" required>
+                    <option value="">Select a month:</option>
+                    <option value="JANUARY">JANUARY</option>
+                    <option value="FEBRUARY">FEBRUARY</option>
+                    <option value="MARCH">MARCH</option>
+                    <option value="APRIL">APRIL</option>
+                    <option value="MARCH">MAY</option>
+                    <option value="JUNE">JUNE</option>
+                    <option value="JUL">JULY</option>
+                    <option value="AUGUST">AUGUST</option>
+                    <option value="SEPTEMBER">SEPTEMBER</option>
+                    <option value="OCTOMBER">OCTOMBER</option>
+                    <option value="NOVEMBER">NOVEMBER</option>
+                    <option value="DECEMBER">DECEMBER</option>
+                  </select>
+
+                  <select class="group" required>
+                    <option value="">Select your class group:</option>
+                    <option value="P">P</option>
+                    <option value="Q">Q</option>
+                    <option value="R">R</option>
+                  </select>
+            
+
+           <button type="submit" class="createbtn">Create</button>
+    </div>
+  </form>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
